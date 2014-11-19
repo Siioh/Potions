@@ -1,0 +1,16 @@
+[
+{
+  "modid": "potions",
+  "name": "Potions",
+  "description": "Gives you more options, ways, and reasons to make potions.",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Siioh"],
+  "credits": "Siioh",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
