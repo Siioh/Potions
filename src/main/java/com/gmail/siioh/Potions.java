@@ -15,7 +15,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="potions", version="1.0.0")
+@Mod(modid="Potions", version="1.0.0")
 public class Potions
 {
 	// The instance of your mod that Forge uses.
