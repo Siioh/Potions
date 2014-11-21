@@ -30,7 +30,8 @@ public class Potions
     public static Item reinforcedBottle;
     public static Block testDirt;
     public static Item testPotion;
-    
+    public static Block JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS;
+   
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	testPotion = new PotionFood(0, 0, false)
@@ -50,13 +51,19 @@ public class Potions
             .setBlockName("testDirt")
             .setCreativeTab(CreativeTabs.tabBlock)
             .setBlockTextureName("potions:testDirt");
-            
+        JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS = new PotionBlock(Material.ground)
+            .setHardness(0.9F)
+            .setStepSound(Block.soundTypeAnvil)
+            .setBlockName("JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS")
+            .setCreativeTab(CreativeTabs.tabBlock)
+            .setBlockTextureName("potions:testDirt");
+                   
             GameRegistry.addShapelessRecipe(new ItemStack(reinforcedBottle), new ItemStack(Items.glass_bottle), new ItemStack(Items.iron_ingot));
             
             GameRegistry.registerItem(reinforcedBottle, "Reinforced Bottle");
             GameRegistry.registerItem(testPotion, "Test Potion");
             GameRegistry.registerBlock(testDirt, "Test Dirt");
-            
+            GameRegistry.registerBlock(JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS, "JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS");
             proxy.registerRenderers();
     }
     
