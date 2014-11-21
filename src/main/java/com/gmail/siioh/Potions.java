@@ -1,5 +1,4 @@
 package com.gmail.siioh;
-//hey look im messing up siioh's code!
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
