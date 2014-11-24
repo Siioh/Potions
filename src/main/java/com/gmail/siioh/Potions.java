@@ -29,7 +29,8 @@ public class Potions
     public static Item reinforcedBottle;
     public static Block testDirt;
     public static Item testPotion;
-    public static Block JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS;
+    public static Block jthrBlock;
+    public static Item catnip;
    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -50,19 +51,25 @@ public class Potions
             .setBlockName("testDirt")
             .setCreativeTab(CreativeTabs.tabBlock)
             .setBlockTextureName("potions:testDirt");
-        JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS = new PotionBlock(Material.ground)
+        jthrBlock = new PotionBlock(Material.ground)
             .setHardness(0.9F)
             .setStepSound(Block.soundTypeAnvil)
-            .setBlockName("JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS")
+            .setBlockName("jthrBlock")
             .setCreativeTab(CreativeTabs.tabBlock)
-            .setBlockTextureName("potions:testDirt");
+            .setBlockTextureName("potions:jthrBrick");
+        catnip = new PotionFood(1, 0, true)
+            .setMaxStackSize(33)
+            .setCreativeTab(CreativeTabs.tabDecorations)
+            .setUnlocalizedName("catnip")
+            .setTextureName("potions:reinforcedBottle");
                    
             GameRegistry.addShapelessRecipe(new ItemStack(reinforcedBottle), new ItemStack(Items.glass_bottle), new ItemStack(Items.iron_ingot));
             
             GameRegistry.registerItem(reinforcedBottle, "Reinforced Bottle");
             GameRegistry.registerItem(testPotion, "Test Potion");
             GameRegistry.registerBlock(testDirt, "Test Dirt");
-            GameRegistry.registerBlock(JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS, "JTHRSSUPERAWESOMEBLOCKOFAWESOMNESS");
+            GameRegistry.registerBlock(jthrBlock, "JTHRSuperBlock");
+            GameRegistry.registerItem(catnip, "catnip");
             proxy.registerRenderers();
     }
     

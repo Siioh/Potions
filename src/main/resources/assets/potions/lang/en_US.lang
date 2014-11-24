@@ -1,4 +1,6 @@
 item.testPotion.name=Test Potion
 item.reinforcedBottle.name=Reinforced Bottle
+item.catnip.name=Catnip
 
 tile.testDirt.name=Test Dirt
+tile.jthrBlock.name=JTHRSuperBlock
