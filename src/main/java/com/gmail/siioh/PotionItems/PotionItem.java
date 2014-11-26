@@ -1,4 +1,4 @@
-package com.gmail.siioh;
+package com.gmail.siioh.PotionItems;
 
 import net.minecraft.item.Item;
 

@@ -1,4 +1,4 @@
-package com.gmail.siioh;
+package com.gmail.siioh.PotionBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
