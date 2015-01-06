@@ -8,7 +8,7 @@ public class TestPotion extends PotionFood {
 	public TestPotion() {
 		super(0, 0, true);
 		setAlwaysEdible();
-		setPotionEffect(9, 10, 1, 1.0F);
+		setPotionEffect(9, 5, 1, 1.0F);
 		setCreativeTab(CreativeTabs.tabBrewing);
 		setUnlocalizedName("testPotion");
 		setTextureName("potions:testPotion");
