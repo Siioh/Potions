@@ -11,6 +11,6 @@ public class TestPotion extends PotionFood {
 		setPotionEffect(9, 5, 1, 1.0F);
 		setCreativeTab(CreativeTabs.tabBrewing);
 		setUnlocalizedName("testPotion");
-		setTextureName("potions:testPotion");
+		setTextureName("potions:reinforcedGreenbottle");
 	}
 }
