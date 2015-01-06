@@ -10,7 +10,7 @@ public class Catnip extends PotionFood {
 		setMaxStackSize(32);
         setCreativeTab(CreativeTabs.tabDecorations);
         setUnlocalizedName("catnip");
-        setTextureName("potions:reinforcedBottle");
+        setTextureName("potions:catnip");
 	}
 
 }
