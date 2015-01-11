@@ -16,3 +16,4 @@ public class TestBlock extends PotionBlock {
         setBlockTextureName("potions:jthrBrick");
 	}
 }
+		
