@@ -1,7 +1,6 @@
 package com.gmail.siioh.PotionFoods.foods;
 
-import net.minecraft.creativetab.CreativeTabs;
-
+import com.gmail.siioh.PotionCreativeTabs.PotionCreativeTab;
 import com.gmail.siioh.PotionFoods.PotionFood;
 
 public class TestPotion extends PotionFood {
@@ -9,7 +8,7 @@ public class TestPotion extends PotionFood {
 		super(0, 0, true);
 		setAlwaysEdible();
 		setPotionEffect(9, 5, 1, 1.0F);
-		setCreativeTab(CreativeTabs.tabBrewing);
+		setCreativeTab(PotionCreativeTab.tab);
 		setUnlocalizedName("testPotion");
 		setTextureName("potions:reinforcedGreenbottle");
 	}

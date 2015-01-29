@@ -2,7 +2,6 @@ package com.gmail.siioh;
 
 import com.gmail.siioh.PotionListener.PotionListener;
 
-
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -31,7 +30,6 @@ public class Potions
     
     public static CommonProxy proxy;
     public static Item reinforcedBottle;
-   
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	proxy.preInit(event);
