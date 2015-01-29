@@ -4,3 +4,5 @@ item.catnip.name=Catnip
 
 tile.testDirt.name=Test Dirt
 tile.jthrBlock.name=JTHRSuperBlock
+
+itemGroup.potionsTab=Potions
