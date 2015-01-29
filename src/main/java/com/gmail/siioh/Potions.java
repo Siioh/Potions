@@ -1,9 +1,9 @@
 package com.gmail.siioh;
 
+import com.gmail.siioh.PotionItems.items.ReinforcedBottle;
 import com.gmail.siioh.PotionListener.PotionListener;
 
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -29,12 +29,11 @@ public class Potions
     		serverSide="com.gmail.siioh.potions.CommonProxy")
     
     public static CommonProxy proxy;
-    public static Item reinforcedBottle;
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	proxy.preInit(event);
-        GameRegistry.addShapelessRecipe(new ItemStack(reinforcedBottle), new ItemStack(Items.glass_bottle), new ItemStack(Items.iron_ingot));
-        proxy.registerRenderers();
+    	proxy.registerRenderers();
         FMLCommonHandler.instance().bus().register(events);
     	MinecraftForge.EVENT_BUS.register(events);
     }
@@ -46,6 +45,8 @@ public class Potions
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-       // Stub Method
+    	GameRegistry.addShapelessRecipe(new ItemStack(new ReinforcedBottle()), new ItemStack(Items.glass_bottle), new ItemStack(Items.iron_ingot));
+        //GameRegistry.addShapelessRecipe(GameRegistry.findItemStack("Potions", "testPotion", 1), GameRegistry.findItemStack("Potions", "magicDust", 1), GameRegistry.findItemStack("Potions", "reinforcedBottle", 1));
+        //GameRegistry.addShapelessRecipe(GameRegistry.findItemStack("Potions", "magicDust", 1), new ItemStack(Items.glowstone_dust), new ItemStack(Items.redstone), new ItemStack(Items.blaze_powder));
     }
 }
